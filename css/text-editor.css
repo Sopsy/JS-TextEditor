@@ -1,0 +1,31 @@
+.text-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.text-editor > .content {
+    min-height: 400px;
+    resize: vertical;
+    overflow: auto;
+    display: inline-block;
+}
+
+.text-editor > .content a {
+    text-decoration: underline;
+    color: #0F6086;
+}
+
+.text-editor > .toolbar {
+    display: flex;
+    gap: 4px;
+    position: sticky;
+    top: 0;
+    background: #eee;
+    padding: 4px 0;
+    flex-wrap: wrap;
+}
+
+.text-editor > .toolbar > .view-source {
+    margin-left: auto;
+}
